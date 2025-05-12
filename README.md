@@ -1,0 +1,1 @@
+This repository is dedicated to revisiting and reinforcing core JavaScript concepts—from the fundamentals to more advanced topics. Whether it's data types, functions, DOM manipulation, or ES6+ features, this space is where I document my understanding, practice with code snippets, and solidify my grasp on the language that powers the web.
