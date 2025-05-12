@@ -1,1 +1,1 @@
-console.log("JS working locally");
+console.log("JS working properly");
