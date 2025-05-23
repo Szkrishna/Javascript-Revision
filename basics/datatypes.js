@@ -21,6 +21,7 @@ let state;
 // Non Primite Data Types 
 // object
 // Array
+// Functions
 
 let score = null
 console.log(typeof(score));
