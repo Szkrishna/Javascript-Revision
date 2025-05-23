@@ -9,16 +9,24 @@ let age = 18
 let isLoggedIn = false
 let state;
 
+//Primitive Data Types
 // number => 2 to power 53
 // bigint
-// string => ""
+// string => "Krishna"
 // boolean => true/false
 // null => standalone value
 // undefined => 
 // symbol => unique
 
-
+// Non Primite Data Types 
 // object
+// Array
 
-console.log(typeof undefined); // type undefined
+let score = null
+console.log(typeof(score));
+
+let avg;
+console.log(typeof(avg));
+
 console.log(typeof null); // type object
+console.log(typeof undefined); // type undefined
