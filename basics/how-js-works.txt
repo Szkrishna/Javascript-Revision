@@ -1,0 +1,87 @@
+🧠 How JavaScript Works
+JavaScript is single - threaded, meaning it executes code one line at a time using a main thread.
+To handle asynchronous operations (like timers, API calls, or user interactions), JavaScript uses a combination of:
+Call Stack
+Web APIs(Browser APIs)
+Callback Queue
+Microtask Queue
+Event Loop
+
+
+🔁 1. Call Stack
+The Call Stack is where the JavaScript engine keeps track of function execution.
+It follows LIFO(Last In, First Out).
+
+Example:
+function greet() {
+    console.log("Hello");
+}
+function start() {
+    greet();
+}
+start();
+
+Call Stack Execution:
+start() → greet() → console.log()
+
+Each function call is pushed onto the stack, and popped off when it finishes.
+
+
+🌐 2. Web APIs / Browser APIs
+These are APIs provided by the browser(or environment like Node.js), not part of the JavaScript engine.Examples:
+setTimeout
+fetch
+DOM events
+console.log
+
+When you call setTimeout(), it is handled by the Web API.Once done, its callback is sent to a queue.
+
+
+🕓 3. Callback Queue(Task Queue)
+This is where asynchronous callbacks(e.g., from setTimeout, click events) wait to be executed after the call stack is empty.
+
+
+⚙️ 4. Microtask Queue
+This is a special queue for promises and async / await.
+Higher priority than the callback queue.
+Handled before the next event loop tick.
+
+Example:
+console.log("A");
+setTimeout(() => console.log("B"), 0);
+Promise.resolve().then(() => console.log("C"));
+console.log("D");
+
+Output:
+A
+D
+C  ← (from microtask queue)
+B  ← (from callback queue)
+
+
+🔄 5. Event Loop
+The Event Loop constantly checks:
+Is the Call Stack empty ?
+If yes, it checks the Microtask Queue first.
+Then it processes the Callback Queue.
+This loop keeps your app responsive.
+
+
+🧩 Summary Diagram(Conceptual Flow):
+vbnet
+Copy
+Edit
+Call Stack
+   ↑
+   |
+   ↓
+Microtask Queue(Promises, async / await)
+   ↓
+Callback Queue(setTimeout, events)
+   ↓
+Event Loop(Moves tasks to Call Stack)
+
+
+✅ Real - World Analogy
+Think of it like a chef(call stack) cooking one dish at a time.While waiting for water to boil(setTimeout / web API), 
+they check other ready - to - go tasks(queues) and return when each task is ready.

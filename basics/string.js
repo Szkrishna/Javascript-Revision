@@ -11,27 +11,27 @@ const gameName = new String('hitesh-hc-com')
 
 
 // Important String Method in JS
- const str =  "Krishna Singh"
+const str = "Krishna Singh"
 
-console.log(str.length) 
+console.log(str.length)
 // method to get string length
 
-console.log(str[2]) 
+console.log(str[2])
 // get chat at using index
 
-console.log(str.charAt(2)) 
+console.log(str.charAt(2))
 // method to get char at specific index
- 
-console.log(str.toLowerCase()) 
+
+console.log(str.toLowerCase())
 // method to convert string to lower case
 
-console.log(str.toUpperCase()) 
+console.log(str.toUpperCase())
 // method to convert string to upper case
 
-console.log(str.slice(0, 5)) 
+console.log(str.slice(0, 5))
 //method to get string from a string
 
-console.log(str.slice(0, -5)) 
+console.log(str.slice(0, -5))
 // slice can also take negative index as argument
 
 console.log(str.substring(0, 4))
@@ -96,7 +96,7 @@ console.log(str6.padStart(20, "*"))
 console.log(str6.padEnd(20, "*"))
 // method to pad the end of a string with a character until it reaches a certain length
 
-console.log(str6.startsWith("H"))  
+console.log(str6.startsWith("H"))
 // method to check if string starts with a specific character
 
 console.log(str6.endsWith("!"))

@@ -1,4 +1,4 @@
-`🔧 Memory Management in JavaScript
+🔧 Memory Management in JavaScript
 JavaScript uses automatic memory management, primarily through garbage collection using the mark-and-sweep algorithm. 
 Memory is allocated, used, and then freed when it's no longer needed.
 
@@ -53,4 +53,4 @@ Uncleared timers/listeners: setInterval, setTimeout, or event listeners not remo
 Use let and const instead of var to avoid unintended globals.
 Nullify large objects when no longer needed: obj = null;
 Use removeEventListener and clearInterval properly.
-Use Chrome DevTools to analyze memory usage and detect leaks.`
+Use Chrome DevTools to analyze memory usage and detect leaks.
