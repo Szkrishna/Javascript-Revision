@@ -36,10 +36,10 @@ console.log(num2.toLocaleString());
 console.log(num2.toLocaleString('en-IN')); 
 // convert number to string with Indian locale formatting
 
-console.log(Number.isInteger(score));
+console.log(isInteger(score));
 // check if value is an integer
 
-console.log(Number.isNaN(score));
+console.log(isNaN(score));
 // check if value is NaN
 
 
