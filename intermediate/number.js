@@ -25,7 +25,6 @@ const num1 = 100.23
 console.log(num1.toFixed(1));
 // convert number to string with 1 decimal place
 
-
 console.log(num1.toPrecision(4)); 
 // convert number to string with 4 significant digits
 

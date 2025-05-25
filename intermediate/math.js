@@ -1,40 +1,40 @@
-// console.log(Math);
-// // This code will log the Math object to the console, which contains properties and methods for mathematical constants and functions.
+console.log(Math);
+// This code will log the Math object to the console, which contains properties and methods for mathematical constants and functions.
 
-// // #Important Math methods in JavaScript
-// const num = -18;
-// console.log(Math.abs(num));
-// // This code will log the absolute value of -18, which is 18.
+// #Important Math methods in JavaScript
+const num = -18;
+console.log(Math.abs(num));
+// This code will log the absolute value of -18, which is 18.
 
-// const num2 = 4.36;
-// console.log(Math.round(num2));
-// // This code will log the rounded value of 4.36, which is 4.
+const num2 = 4.36;
+console.log(Math.round(num2));
+// This code will log the rounded value of 4.36, which is 4.
 
-// console.log(Math.ceil(num2));
-// // This code will log the smallest integer greater than or equal to 4.36, which is 5.
+console.log(Math.ceil(num2));
+// This code will log the smallest integer greater than or equal to 4.36, which is 5.
 
-// console.log(Math.floor(num2));
-// // This code will log the largest integer less than or equal to 4.36, which is 4.
+console.log(Math.floor(num2));
+// This code will log the largest integer less than or equal to 4.36, which is 4.
 
-// console.log(Math.max(1, 2, 3, 4, 5));
-// // This code will log the maximum value among the provided numbers, which is 5.
+console.log(Math.max(1, 2, 3, 4, 5));
+// This code will log the maximum value among the provided numbers, which is 5.
 
-// console.log(Math.min(1, 2, 3, 4, 5));
-// // This code will log the minimum value among the provided numbers, which is 1.
+console.log(Math.min(1, 2, 3, 4, 5));
+// This code will log the minimum value among the provided numbers, which is 1.
 
-// const num3 = 25;
-// console.log(Math.sqrt(num3));
-// // This code will log the square root of 25, which is 5.
+const num3 = 25;
+console.log(Math.sqrt(num3));
+// This code will log the square root of 25, which is 5.
 
-// console.log(Math.pow(num3, 2));
-// // This code will log 2 raised to the power of 3, which is 8.
+console.log(Math.pow(num3, 2));
+// This code will log 2 raised to the power of 3, which is 8.
 
-// console.log(Math.random());
-// // This code will log a random number between 0 (inclusive) and 1 (exclusive).
+console.log(Math.random());
+// This code will log a random number between 0 (inclusive) and 1 (exclusive).
 
-// let newNumber = Math.round(Math.random() * 6);
-// console.log(newNumber);
-// // This code will log a random integer between 0 and 6 (inclusive) by multiplying a random number by 6 and rounding it to the nearest integer.
+let newNumber = Math.round(Math.random() * 6);
+console.log(newNumber);
+// This code will log a random integer between 0 and 6 (inclusive) by multiplying a random number by 6 and rounding it to the nearest integer.
 
 
 let draw = 5;
@@ -59,6 +59,7 @@ console.log(occurance);
 // The `includes()` method checks if the generated number is already in the `occurance` array to ensure uniqueness.
 // The `if` statement checks if the number is less than 10, and if so, it adds a leading zero to format it as a two-digit string.
 // The final result is an array of unique two-digit random numbers, which is logged to the console.
+
 
 `
 #Summary (These below method are important method used to manipulate strings in JavaScript)
