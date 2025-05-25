@@ -106,28 +106,30 @@ console.log(str6.repeat(3))
 // method to repeat a string a certain number of times
 
 
-// Summary = "These below method are important method used to manipulate strings in JavaScript."
-// 1. length
-// 2. charAt
-// 3. toLowerCase
-// 4. toUpperCase
-// 5. slice
-// 6. substring
-// 7. concat
-// 8. split
-// 9. includes
-// 10. startsWith
-// 11. endsWith
-// 12. indexOf
-// 13. lastIndexOf
-// 14. search
-// 15. replace
-// 16. replaceAll
-// 17. trim
-// 18. trimStart
-// 19. trimEnd
-// 20. padStart
-// 21. padEnd
-// 22. startsWith
-// 23. endsWith
-// 24. repeat
+`
+#Summary (These below method are important method used to manipulate strings in JavaScript)
+1. length - get length of string
+2. charAt - get character at specific index
+3. toLowerCase - convert string to lower case
+4. toUpperCase - convert string to upper case
+5. slice - extract a section of a string
+6. substring - extract a substring from a string
+7. concat - concatenate two strings
+8. split - split a string into an array based on a delimiter
+9. includes - check if a string contains a substring
+10. startsWith - check if a string starts with a substring
+11. endsWith - check if a string ends with a substring
+12. indexOf - get the index of the first occurrence of a substring
+13. lastIndexOf - get the index of the last occurrence of a substring
+14. search - search for a substring and return its index
+15. replace - replace a substring with another substring
+16. replaceAll - replace all occurrences of a substring with another substring
+17. trim - remove whitespace from both ends of a string
+18. trimStart - remove whitespace from the start of a string
+19. trimEnd - remove whitespace from the end of a string
+20. padStart - pad the start of a string with a character until it reaches a certain length
+21. padEnd - pad the end of a string with a character until it reaches a certain length
+22. startsWith - check if a string starts with a specific character
+23. endsWith - check if a string ends with a specific character
+24. repeat - repeat a string a certain number of times
+`
