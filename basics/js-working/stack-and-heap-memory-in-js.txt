@@ -1,0 +1,62 @@
+🧠 Stack vs Heap Memory in JavaScript
+JavaScript manages memory in two main areas:
+
+
+📦 1. Stack Memory
+Used for primitive values (e.g., number, string, boolean, null, undefined, symbol, bigint)
+Also holds the call stack (execution context of functions)
+LIFO (Last In, First Out) structure
+Fast and automatically managed
+
+🧪 Example:
+let x = 10;
+let y = "hello";
+Here, x and y are stored directly in the stack.
+
+
+🗃️ 2. Heap Memory
+Used for reference types: Object, Array, Function
+Dynamically allocated
+Slower to access but more flexible
+Managed via Garbage Collection
+
+
+🧪 Example:
+let person = {
+  name: "Alice",
+  age: 30
+};
+
+In this case:
+person (the reference) is stored in the stack
+The actual object { name: "Alice", age: 30 } is stored in the heap
+
+
+📌 Visual Summary:
+Stack:
+---------
+| x = 10     |  → Primitive value
+| y = "hi"   |
+| person → 🢂 |  → Pointer to heap
+---------
+
+Heap:
+-----------------------
+| { name: "Alice", ... } |  → Actual object data
+-----------------------
+
+
+🧹 Garbage Collection
+JavaScript automatically frees heap memory when no variable refers to it anymore:
+
+let obj = { value: 123 };
+obj = null; // Now the object is unreachable → eligible for garbage collection
+
+⚠️ Stack vs Heap: Key Differences
+
+Feature	        Stack	                        Heap
+Speed	        Fast	                            Slower
+Allocation	    Static	                        Dynamic
+Stores	        Primitives, function calls	    Objects, arrays, functions
+Size	        Small (limited)	                Large
+Managed by	    JS engine	                    JS engine + Garbage Collector
