@@ -1,30 +1,33 @@
-//Scope ans shadowing in js
+// function a(){
+//     let i = 1;
 
-let b = 10;
-function a() {
-    let b = 20;
-    console.log(b);
+//     setTimeout(() => {
+//         console.log("Value of i ==>", i);
+//     }, 3000);
+
+//     console.log("Hello Krishna");
+// }
+
+// a();
+
+
+function b() {
+    for(var i = 0; i < 5; i++) {
+        setTimeout(() => {
+            console.log("Value of i from var ==>", i);
+        }, i*1000);
+    }
 }
 
-a();
-console.log(b);
+b();
 
 
-var d = 10;
 function c() {
-    let d = 20;
-    console.log(d);
+    for(let i = 1; i <= 5; i++) {
+        setTimeout(() => {
+            console.log("Value of i from let ==>", i);
+        }, i*1000); 
+    }
 }
 
 c();
-console.log(d);
-
-
-const f = 10;
-function e() {
-    var f = 20;
-    console.log(f);
-}
-
-e();
-console.log(f);
