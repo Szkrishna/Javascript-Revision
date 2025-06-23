@@ -1,33 +1,36 @@
-// function a(){
-//     let i = 1;
+const arr =  [1, 2, 3, 4, 5];
 
-//     setTimeout(() => {
-//         console.log("Value of i ==>", i);
-//     }, 3000);
+// map examples
 
-//     console.log("Hello Krishna");
-// }
+// let bi = arr.map(double);
+// console.log(bi);
 
-// a();
+// sorter syntax
+bi = arr.map((item) => item*2);
+console.log(bi);
 
+// let tri = arr.map(triple);
+// console.log(tri);
 
-function b() {
-    for(var i = 0; i < 5; i++) {
-        setTimeout(() => {
-            console.log("Value of i from var ==>", i);
-        }, i*1000);
-    }
+// sorter syntax
+tri = arr.map((item) => item*3);
+console.log(tri);
+
+// let bin = arr.map(binary);
+// console.log(bin);
+
+// sorter syntax
+bin = arr.map((item) => item.toString(2));
+console.log(bin);
+
+function double(x) {
+    return 2*x;
 }
 
-b();
-
-
-function c() {
-    for(let i = 1; i <= 5; i++) {
-        setTimeout(() => {
-            console.log("Value of i from let ==>", i);
-        }, i*1000); 
-    }
+function triple(x) {
+    return 3*x;
 }
 
-c();
+function binary(x) {
+    return x.toString(2);
+}
