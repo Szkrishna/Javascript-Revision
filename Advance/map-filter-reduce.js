@@ -56,3 +56,19 @@ console.log(greater);
 
 let smaller = arr.reduce((curr, acc) => curr < acc ? curr : acc, 0);
 console.log(smaller);
+
+
+
+// Second highest number using filter and reduce.
+function getSecondLargest(nums) {
+    let temp = nums;
+    let firstHighest = temp.reduce((acc, curr) => curr > acc ? curr : acc, 0);
+    temp = temp.filter((item) => item != firstHighest);
+    let secondHighest = temp.reduce((acc, curr) => curr > acc ? curr : acc, 0);
+    return secondHighest;
+}
+
+
+let n = [10, 12, 4, 54, 124, 22, 2, 45];
+let result  = getSecondLargest(n);
+console.log(result);
